@@ -295,5 +295,21 @@ resulta = carrito.filter(function(producto){
 
 
 
+//THIS: hace referencia al mismo objeto (no se puede usar con arrow function)
+
+const reservacion = {
+    nombre: `Brauli`,
+    apellido: 'Lopez',
+    total: 500,
+    pagado: false,
+    informacion: function(){
+        console.log(`El cliente ${this.nombre} reservó y su cantidad a pagar es ${this.total}`)
+    }
+}
+
+
+console.log(reservacion.informacion);
+
+
 
 
